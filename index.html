@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miro Board</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0078ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        a:hover {
+            background-color: #005bb5;
+        }
+    </style>
+    <script>
+        function redirect() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            if (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent)) {
+                window.location.href = "https://miro.com/app/board/uXjVK2J7ICc=/?present";
+            } else {
+                window.location.href = "https://miro.com/app/board/uXjVK2J7ICc=/?present";
+            }
+        }
+    </script>
+</head>
+<body onload="redirect()">
+    <div class="container">
+        <h1>View Miro Board</h1>
+        <p>If you are not redirected, <a href="https://miro.com/app/board/uXjVK2J7ICc=/?present" target="_blank">click here</a>.</p>
+    </div>
+</body>
+</html>
